@@ -1,37 +1,37 @@
 # 🃏 Trick-Taking: Game Engine
 
-Un motor de juego de cartas de "bazas" construido con un enfoque en la personalización extrema y el tiempo real. Este proyecto permite a los jugadores enfrentarse en una red local, cada uno con una experiencia visual única basada en su perfil.
+A trick-taking card game engine built with a focus on extreme customization and real-time interaction. This project allows players to compete over a local network, each experiencing a unique visual interface based on their profile.
 
-## ⚙️ Concepto del Proyecto
-La arquitectura está diseñada para separar la **lógica del juego** de la **capa visual**. Aunque el tema por defecto es el mundo de los piratas, el sistema soporta múltiples "skins" o ambientes que el jugador desbloquea mediante logros.
+## Project Concept
+The architecture is designed to clearly separate game logic from the visual layer. While the default theme is inspired by a pirate setting, the system supports multiple "skins" or environments that players can unlock through achievements.
 
-- **Dinámica:** Juego de predicción y bazas por turnos.
-- **Multidispositivo:** Optimizado para jugar desde móviles o computadoras en red local.
-- **Personalización (Themes):** Sistema de 7 ambientes configurables que cambian toda la interfaz (colores, sombras y estilos).
-- **Sistema de Logros:** Registro de victorias y desbloqueables vinculados al perfil del jugador.
+- **Gameplay:** Turn-based prediction and trick-taking mechanics.
+- **Multi-device:** Optimized for play on both mobile devices and desktop within a local network.
+- **Customization (Themes):** A system of 7 configurable environments that dynamically change the entire interface (colors, shadows, and styles).
+- **Achievement System:** Tracks victories and unlockables tied to each player's profile.
 
-## 🚀 Stack Tecnológico
-Elegido para garantizar un aprendizaje profundo de los estándares de la industria:
+## Tech Stack
+Chosen to ensure a deep understanding of modern industry standards:
 
-* **Core:** [React 18](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) (Tipado estricto para lógica compleja).
-* **Build Tool:** [Vite](https://vitejs.dev/) (Entorno de desarrollo de alto rendimiento).
-* **UI Engine:** [Chakra UI v2](https://v2.chakra-ui.com/) (Sistema de diseño basado en tokens para facilitar el cambio de temas).
-* **Real-time DB:** [Firebase Firestore](https://firebase.google.com/) (Sincronización de estados de juego en tiempo real).
+* **Core:** [React 19](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/) (strict typing for complex logic).
+* **Build Tool:** [Vite](https://vitejs.dev/) (high-performance development environment).
+* **UI Engine:** [Chakra UI v2](https://v2.chakra-ui.com/) (token-based design system for flexible theming).
+* **Real-time DB:** [Firebase Firestore](https://firebase.google.com/) (real-time game state synchronization).
 
-## 🏗️ Estructura de Archivos
-El proyecto utiliza una arquitectura basada en **Features** para facilitar el escalamiento:
+## Project Structure
+The project follows a feature-based architecture to support scalability:
 
 ```text
 src/
-  ├── components/    # Componentes atómicos (Botones, Layouts)
-  ├── features/      # Módulos de lógica (Auth, Game Engine, Album)
-  ├── theme/         # Tokens de diseño y configuración de los 7 temas
-  └── assets/        # Recursos visuales desacoplados por tema
+  ├── components/    # Atomic Components (Buttons, Layouts)
+  ├── features/      # Logic Modules (Auth, Game Engine, Album)
+  ├── theme/         # Design Tokens and Theme Configuration (7 dynamic themes)
+  └── assets/        # Visual Assets decoupled by theme
 ```
 
-## 🛠️ Instalación
+## Installation
 
-Clonar y preparar:
+Cloning and preparing:
 
 ```bash
 git clone [https://github.com/armandomariscal/trick-taking.git](https://github.com/armandomariscal/trick-taking.git)
@@ -39,24 +39,26 @@ cd trick-taking
 npm install
 ```
 
-Ejecutar:
+Execute:
 
 ```bash
 npm run dev
 ```
 
-## 🚩 Road Map de Desarrollo
+## Development Roadmap
 
-[x] Arquitectura base con Vite, TS y Chakra UI.
+[x] Base architecture with Vite, TypeScript, and Chakra UI.
 
-[x] Motor de Temas Dinámicos (Ambientes configurables).
+[x] Dynamic Theming System (configurable environments).
 
-[ ] Integración de Firebase (Auth & Firestore).
+[ ] Firebase integration (Auth & Firestore).
 
-[ ] Vista de Álbum: Visualización de conceptos y mecánicas de cartas.
+[ ] Album View: visualization of card concepts and mechanics.
 
-[ ] Lógica de Turnos: Manejo de estados en red local.
+[ ] Turn Logic: state management over local network.
 
-[ ] Gamificación: Logros y skins desbloqueables por victorias.
+[ ] Gamification: achievements and unlockable skins.
 
-Este proyecto es un entorno de experimentación para dominar React y arquitecturas de software modernas.
+---
+
+This project is an experimental environment focused on mastering React and modern software architecture.
