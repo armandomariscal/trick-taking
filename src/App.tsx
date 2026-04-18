@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import { Box, Heading, Text, Center, VStack, Button, HStack } from '@chakra-ui/react'
 import { gameThemes } from './theme/colors'
+import { useNavigate } from "react-router-dom";
 
 function App() {
   const [currentBg, setCurrentBg] = useState(gameThemes.red.background)
   const [accentColor, setAccentColor] = useState(gameThemes.red.accent)
   const [themeName, setThemeName] = useState('DevOps')
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.title = `Trick-Taking | ${themeName}`;
@@ -65,6 +67,10 @@ function App() {
 
             {}
           </HStack>
+
+          <Button colorScheme="teal" onClick={() => navigate("/cards")}>
+            Ver todas las cartas
+          </Button>
 
           <Box p={6} border="1px dashed" borderColor={accentColor} borderRadius="md">
             <Text color="white">Modo actual: {themeName}</Text>
